@@ -43,6 +43,62 @@ var rotation2 = function () {
     });
 }
 rotation2();
+// 轮播图
+// let ol = document.querySelector(".news-two-lunbo>ol")
+// let ul = document.querySelector(".news-two-lunbo>ul")
+// for (let i = 0; i < ul.children.length - 1; i++) {
+//     // 4.2.1 通过createElement()方法来创建li
+//     let li = document.createElement('li');
+//     li.dataset.index = i;
+//     // 4.2.2 把创建出来的li添加到ol中去
+//     if (i == 0) {
+//         li.classList.add('new-two-lunbo-two');
+//     }
+//     // 把创建好的li添加到ol中去
+//     ol.appendChild(li);
+
+//     li.addEventListener('click', function () {
+//         // console.log(this);
+//         // 排他
+//         for (let j = 0; j < ol.children.length; j++) {
+//             ol.children[j].classList.remove('active');
+//         }
+//         // 自己添加active
+//         this.classList.add('active');
+
+//         // 点击谁 就把谁的索引拿出来
+//         let index = this.dataset.index;
+//         // console.log(index);
+//         animate(ul, {
+//             left: -index * sliderWidth
+//         })
+//     })
+// }
+
+let ul = document.querySelector(".news-two-lunbo-one>ul")
+console.log(ul)
+let li = document.querySelectorAll(".news-two-lunbo-there>li")
+let sliderWidth = "320px"
+console.log(li)
+for (var u = 0; u < li.length; u++) {
+    li[u].dataset.index = u
+    li[u].onclick = function () {
+        console.log(11111)
+        for (var i = 0; i < li.length; i++) {
+            li[i].classList.remove("new-two-lunbo-two1")
+            li[i].classList.add("new-two-lunbo-two")
+        }
+        this.classList.add("new-two-lunbo-two1")
+        console.log(this.dataset.index)
+        let index = this.dataset.index
+        animate(ul, {
+            marginLeft: -index * 320
+        })
+    }
+}
+
+
+
 
 
 
