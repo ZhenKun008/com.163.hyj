@@ -44,46 +44,15 @@ var rotation2 = function () {
 }
 rotation2();
 // 轮播图
-// let ol = document.querySelector(".news-two-lunbo>ol")
-// let ul = document.querySelector(".news-two-lunbo>ul")
-// for (let i = 0; i < ul.children.length - 1; i++) {
-//     // 4.2.1 通过createElement()方法来创建li
-//     let li = document.createElement('li');
-//     li.dataset.index = i;
-//     // 4.2.2 把创建出来的li添加到ol中去
-//     if (i == 0) {
-//         li.classList.add('new-two-lunbo-two');
-//     }
-//     // 把创建好的li添加到ol中去
-//     ol.appendChild(li);
-
-//     li.addEventListener('click', function () {
-//         // console.log(this);
-//         // 排他
-//         for (let j = 0; j < ol.children.length; j++) {
-//             ol.children[j].classList.remove('active');
-//         }
-//         // 自己添加active
-//         this.classList.add('active');
-
-//         // 点击谁 就把谁的索引拿出来
-//         let index = this.dataset.index;
-//         // console.log(index);
-//         animate(ul, {
-//             left: -index * sliderWidth
-//         })
-//     })
-// }
-
 let ul = document.querySelector(".news-two-lunbo-one>ul")
-console.log(ul)
+// console.log(ul)
 let li = document.querySelectorAll(".news-two-lunbo-there>li")
 let sliderWidth = "320px"
-console.log(li)
+// console.log(li)
 for (var u = 0; u < li.length; u++) {
     li[u].dataset.index = u
     li[u].onclick = function () {
-        console.log(11111)
+        // console.log(11111)
         for (var i = 0; i < li.length; i++) {
             li[i].classList.remove("new-two-lunbo-two1")
             li[i].classList.add("new-two-lunbo-two")
@@ -97,8 +66,192 @@ for (var u = 0; u < li.length; u++) {
     }
 }
 
+// 点击切换的轮播图
+let LunboShi = document.querySelector(".lunboshixian")
+console.log(LunboShi)
+let LunboDianji = document.querySelectorAll(".news-two-dianji>div")
+console.log(LunboDianji)
+for (var u = 0; u < LunboDianji.length; u++) {
+    LunboDianji[u].dataset.index = u
+    LunboDianji[u].onclick = function () {
 
+        console.log(this.dataset.index)
+        if (this.dataset.index == 0) {
+            LunboDianji[0].classList.remove("news-two-dianji-one")
+            LunboDianji[1].classList.remove("news-two-dianji-there1")
+            LunboDianji[2].classList.remove("news-two-dianji-two1")
+            LunboDianji[0].classList.add("news-two-dianji-one")
 
+        }
+        else if (this.dataset.index == 1) {
+            LunboDianji[0].classList.remove("news-two-dianji-one")
+            LunboDianji[1].classList.remove("news-two-dianji-there1")
+            LunboDianji[2].classList.remove("news-two-dianji-two1")
+            LunboDianji[1].classList.add("news-two-dianji-there1")
 
+        }
+        else if (this.dataset.index == 2) {
+            LunboDianji[0].classList.remove("news-two-dianji-one")
+            LunboDianji[1].classList.remove("news-two-dianji-there1")
+            LunboDianji[2].classList.remove("news-two-dianji-two1")
+            LunboDianji[2].classList.add("news-two-dianji-two1")
+        }
+        let index = this.dataset.index
+        animate(LunboShi, {
+            marginLeft: -index * 320
+        })
+    }
+}
+// 最难的地方
+var prev = document.querySelector(".figure-one-two-one")
+var next = document.querySelector(".figure-one-two-two")
+// 获取需要变化的元素
+var people = document.querySelectorAll(".figure-two-one>div")
+var jianshao = document.querySelectorAll(".figure-two-two-one>div")
+for (var i = 0; i < people.length; i++) {
+    people[i].dataset.index = i;
+    jianshao[i].dataset.index = i
+    prev.onclick = function () {
+        var show = document.querySelector(".show")
+        var show1 = document.querySelector(".show1")
+        // console.log(show.dataset.index)
+        if (show.dataset.index == 0) {
+            // 获取
+            var prev1 = document.querySelector(".figure-two-one-nigth")
+            var jianshaoprev = document.querySelector(".figure-two-two-one-ningth")
+            //   隐藏
+            show.classList.remove("show")
+            show1.classList.remove("show1")
+            // 显示
+            prev1.classList.add("show")
+            jianshaoprev.classList.add("show1")
 
+        }
+        else {
+            // 赋值
+            let prev2 = show.dataset.index - 1
+            console.log(prev2)
+            let jianshaoprev1 = show1.dataset.index - 1
+            // 隐藏
+            show.classList.remove("show")
+            show1.classList.remove("show1")
+            // 显示
+            people[prev2].classList.add("show")
+            jianshao[jianshaoprev1].classList.add("show1")
+        }
+    }
+    next.onclick = function () {
+        var show = document.querySelector(".show")
 
+        var show1 = document.querySelector(".show1")
+
+        if (show.dataset.index == 8) {
+            // 获取
+            var prev1 = document.querySelector(".figure-two-one-one ")
+            var jianshaoprev = document.querySelector(".figure-two-two-one-one")
+            //   隐藏
+            show.classList.remove("show")
+            show1.classList.remove("show1")
+            // 显示
+            prev1.classList.add("show")
+            jianshaoprev.classList.add("show1")
+
+        }
+        else {
+            // 赋值
+            let prev2 = Number(show.dataset.index) + 1
+            let jianshaoprev1 = Number(show.dataset.index) + 1
+            console.log(jianshaoprev1, prev2)
+            // 隐藏
+            show.classList.remove("show")
+            show1.classList.remove("show1")
+            // 显示
+            people[prev2].classList.add("show")
+            jianshao[jianshaoprev1].classList.add("show1")
+        }
+    }
+}
+// 页面滑动显示隐藏
+function getTop() {
+    var top = $(document).scrollTop();
+    if ($(document).scrollTop() > 500) {
+        $(".gudin1").show();
+        $(".gudin2").show()
+    } else {
+        $(".gudin1").hide();
+        $(".gudin2").hide()
+    }
+    setTimeout(getTop);
+}
+
+getTop();
+
+// 楼梯导航
+var louceng1 = $('.news').eq(0).offset().top;
+var louceng2 = $('.hujianyuan').eq(0).offset().top;
+var louceng3 = $('.figure').eq(0).offset().top;
+var louceng4 = $('.United').eq(0).offset().top;
+let LOL = document.querySelectorAll(".gudin22")
+for (var i = 0; i < LOL.length; i++) {
+    LOL[i].onclick = function () {
+        for (var u = 0; u < LOL.length; u++) {
+            LOL[u].classList.remove("cn")
+        }
+        this.classList.add("cn")
+    }
+    LOL[0].onclick = function () {
+        $('html,body').animate({
+            scrollTop: 0
+        }, 200, 'linear');
+    }
+    LOL[1].onclick = function () {
+        $('html,body').animate({
+            scrollTop: 1300
+        }, 200, 'linear');
+    }
+    LOL[2].onclick = function () {
+        $('html,body').animate({
+            scrollTop: 2700
+        }, 200, 'linear');
+    }
+    LOL[3].onclick = function () {
+        $('html,body').animate({
+            scrollTop: 4300
+        }, 200, 'linear');
+    }
+    LOL[4].onclick = function () {
+        $('html,body').animate({
+            scrollTop: 5500
+        }, 200, 'linear');
+    }
+    $(window).scroll(function () {
+        var v = $(this).scrollTop();
+        console.log(
+            v
+        )
+        if (v >= 0) {
+            $('.gudin2>.gudin22').eq(0).addClass('cn').siblings().removeClass('cn');
+        }
+        if (v >= 1300) {
+            $('.gudin2>.gudin22').eq(1).addClass('cn').siblings().removeClass('cn');
+        }
+        if (v >= 2700) {
+            $('.gudin2>.gudin22').eq(2).addClass('cn').siblings().removeClass('cn');
+        }
+        if (v >= 4300) {
+            $('.gudin2>.gudin22').eq(3).addClass('cn').siblings().removeClass('cn');
+        }
+        if (v >= 5500) {
+            $('.gudin2>.gudin22').eq(4).addClass('cn').siblings().removeClass('cn');
+        }
+    })
+    // $('.gudin22').click(function () {
+    //     // 获取被点击的li的索引
+    //     var num = $(this).index();
+    //     // 通过索引找到对应的楼层的距离文档的位置
+    //     var v = $('.jd').eq(num).offset().top;
+    //     $('html,body').animate({
+    //         scrollTop: v
+    //     }, 200, 'linear');
+    // }
+}
