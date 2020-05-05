@@ -1,0 +1,1130 @@
+.body html{
+padding:0;
+margin: 0;
+position: relative;
+}
+.head{
+    position: relative;
+    z-index: 9999;
+    width: 100%;
+    height: 54px;
+    margin: auto;
+    font-size: 12px;
+    font-style: normal;
+    border-bottom: 1px solid #dadada;
+}
+.head-left{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 179px;
+    height: 54px;
+    overflow: hidden;
+    background-color: #cf1132;
+    color: #fff!important;
+    font-size: 12px;
+    cursor: default;
+    text-align: center;
+    line-height: 54px;
+}
+.head-left>i{
+    background: url(../img/目录.png) no-repeat;
+    width: 25px;
+    height: 11px;
+    display: inline-block;
+    background-position: -90px -306px ;
+}
+.head-right{
+    width: 138px;
+    height: 54px;
+    overflow: hidden;
+    position: absolute ;
+    right: 0;
+    top: 0;
+}
+.head-right-one{
+    position: absolute;
+    right: -9px;
+    top: 0px;
+    display: block;
+    width: 138px;
+    height: 54px;
+    overflow: hidden;
+    z-index: 9;
+    border-left: 1px solid #dadada;
+    text-align: center;
+    line-height: 54px;
+    animation: rotate1 1.1s steps(5) infinite ;
+
+}
+.head-right-two{
+    position: absolute;
+    right: 0;
+    top: -54px;
+    display: block;
+    width: 129px;
+    height: 54px;
+    overflow: hidden;
+    border-left: 1px solid #dadada;
+    text-align: center;
+    line-height: 54px;
+}
+.head-center{
+    background: url(../img/logo.png);
+    width: 133px;
+    height: 44px;
+    display: inline-block;
+    margin-top: 6px;
+    position: absolute;
+    left: 50%;
+    margin-left: -30px;
+    margin-top: 5px;
+}
+.center{
+    width: 140px;
+    height: 94px;
+    position: absolute;
+    top: 55px;
+    left: 40px;
+}
+.center-left{
+    width: 100%;
+    height: 63px;
+    z-index: 99;
+    position: absolute;
+    top: 16px;
+    left: 0;
+    float: right;
+}
+
+.center-left>p{
+    width: 20px;
+    font-size: 14px;
+    color: #5f7474;
+    float: left;
+}
+.center-left>a{
+    display: block;
+    width: 96px;
+    height: 95px;
+    background: url(../img/96.webp);
+    float: left;
+    margin: 0 0 0 15px;
+}
+.Share-one{
+    position: absolute;
+    z-index: 99;
+    top: 75px;
+    right: 25px;
+    color: #69645d;
+}
+.Share-one>img{
+    position: absolute;
+    right: -25px;
+    top: -20px;
+}
+.Share-One{
+    background: url(../img/Enter2.png);
+    background-position: -2117px -440px;
+    display: block;
+    width: 49px;
+    height: 161px;
+    text-indent: -99999px;
+    overflow: hidden;
+    float: right;
+    position: absolute;
+    top: 80px;
+    right: 50px
+}
+.Share-Two{
+    float: left;
+    margin-right: 2px;
+    width: 24px;
+    height: 27px;
+    position: relative;
+    padding-bottom: 15px;
+    left: -90px;
+}
+.Share-Two>i{
+    background: url(../img/EnterWX.png);
+    position: absolute;
+    z-index: 99;
+    top: 0px;
+    right: 0px;
+    color: #69645d;
+    display: block;
+    height: 27px;
+    cursor: default;
+    width: 100%;
+}
+.Share-two-one{
+    background: url(../img/EnterBJ.png);
+    display: none;
+    position: absolute;
+    width: 162px;
+    height: 199px;
+    top: 35px;
+    left: -68px;
+}
+.Share-two-one>img{
+    width: 130px;
+    display: block;
+    margin: 20px auto 0;
+}
+.Share-two-one>p{
+    color: #4e4e4e;
+    line-height: 18px;
+    text-align: center;
+}
+.Share-two-one-one{
+    color: #bb9547;
+    display: block;
+}
+.Share-there{
+    float: left;
+    margin-right: 2px;
+    width: 24px;
+    height: 27px;
+    position: relative;
+    padding-bottom: 15px;
+    right: 90px;
+}
+.Share-there>i{
+    background: url(../img/EnterVB.png);
+    display: block;
+    height: 27px;
+    position: absolute;
+    z-index: 99;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+}
+.Share-there-one{
+    background: url(../img/EnterBJ.png);
+    display: none;
+    position: absolute;
+    width: 162px;
+    height: 199px;
+    top: 35px;
+    left: -68px;
+}
+.Share-there-one>img{  
+      width: 130px;
+    display: block;
+    margin: 20px auto 0;
+}
+.Share-there-one>p{
+    color: #4e4e4e;
+    line-height: 18px;
+    text-align: center;
+}
+.Share-there-one-one{
+    color: #bb9547;
+    display: block;
+}
+.Share-four{
+    float: left;
+    margin-right: 2px;
+    width: 24px;
+    height: 27px;
+    position: relative;
+    padding-bottom: 15px;
+    width: 85px;
+    height: 27px;
+    margin-right: 15px;
+left: -58px;
+
+}
+.Share-four>a{
+    background: url(../img/EnterQQ.png);
+    width: 109px;
+    height: 33px;
+    display: block;
+    background-repeat: no-repeat;
+}
+.Share-four-one{
+    background: url(../img/EnterBJ.png);
+    width: 180px;
+    height: 182px;
+    left: -48px;
+    position: absolute;
+    background-size: 100% 100%;
+    display: none;
+}
+.Share-four-one>img{
+    width: 130px;
+    display: block;
+    margin: 20px auto 0;
+    border: 1px solid #bebebe;
+    margin-top: 28px
+}
+.Share-five{
+    width: 17px;
+    height: 27px;
+    margin: 0 5px;
+    float: left;
+    margin-right: 2px;
+    width: 24px;
+    height: 27px;
+    position: relative;
+    padding-bottom: 15px;
+    left: -55px;
+    top: 2px;
+}
+
+.Share-five>i{
+    background: url(../img/EnterBD.png) no-repeat;
+    display: block;
+    height: 27px;
+    background-size: 100% auto;
+    width: 17px;
+}
+.Share-five>span{
+    display: none;
+    position: absolute;
+    width: 60px;
+    top: 30px;
+    left: -15px;
+    color: #fff;
+    font-size: 14px;
+}
+.Share-six{
+    width: 17px;
+    height: 35px;
+    margin: 0 5px;
+    float: left;
+    margin-right: 2px;
+    width: 24px;
+    height: 27px;
+    position: relative;
+    padding-bottom: 15px;
+    left: -60px;
+    top: 7px;
+}
+.Share-six>i{
+    background: url(../img/EnterWY.png) no-repeat;
+    background-size: 100% auto;
+    display: block;
+    height: 27px;
+    width: 17px;
+}
+.Share-six>span{
+    display: none;
+    position: absolute;
+    width: 60px;
+    top: 24px;
+    left: -15px;
+    color: #fff;
+    font-size: 14px;
+}
+.Share-seven{
+    position: relative;
+    cursor: default;
+    font-size: 14px;
+    color: #fff;
+    z-index: 2;
+    color: #201e1b;
+    font-size: 18px;
+    padding: 0 15px 15px 0;
+    line-height: 28px;
+    vertical-align: middle;
+    float: left;
+    left: -50px;
+}
+.Share-seven>i{
+    background: url(../img/EnterFX.png);
+    width: 16px;
+    height: 19px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-top: -5px;
+}
+.Share-seven>span{  
+    position: absolute;
+    width: 60px;
+    top: 0px;
+    left: 20px;
+    color: #fff;
+    font-size: 14px;}
+.Share-eight{
+    position: relative;
+    z-index: 2;
+    color: #201e1b;
+    font-size: 18px;
+    padding: 0 15px 15px 0;
+    line-height: 28px;
+    vertical-align: middle;
+    float: left;
+    width: 45px;
+    height: 43px;
+}    
+.Share-eight>i{
+    background: url(../img/EnterYY.png);
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-top: -5px;
+}
+
+.Share-Two>i:hover+.Share-two-one{
+    display: block;
+} 
+.Share-there>i:hover+.Share-there-one{
+    display: block;
+}
+.Share-four>a:hover+.Share-four-one{
+    display: block;
+}
+.Share-five>i:hover+.Share-five-one{
+    display: block;
+}
+.Share-six>i:hover+.Share-six-one{
+    display: block;
+}
+.warp-1{
+    height: 1150px;
+    width: 1920px;
+    position: relative;
+    left: 50%;
+    margin: 0 0 0 -960px;
+}
+.warp-1-1{
+    width: 100%;
+    height: 100%;
+}
+.warp-2{
+    width: 286px;
+    height: 511px;
+    top: 280px;
+    left: 50%;
+    margin: 0 0 0 -143px;
+    z-index: 10;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+.warp-2-1{
+    background: url(../img/Enter2.png);
+    background-position: -591px 0px;
+    position: absolute;
+    top: -140px;
+    left: 50%;
+    margin-left: -640px;
+    width: 343px;
+    height: 620px;
+    background-repeat: no-repeat;
+}
+.warp-2-1-1{
+    background: url(../img/Enter2.png);
+    background-position: -2166px -440px;
+    width: 54px;
+    height: 54px;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 54px;
+    height: 54px;
+    right: 0;
+    top: 35px;
+    cursor: pointer;
+    z-index: 9;
+}
+.warp-2-1>i{
+    background: url(../img/Enter2.png);
+    background-position: -2204px -494px;
+    display: block;
+    width: 18px;
+    height: 12px;
+    position: absolute;
+    top: 10%;
+    left: 92%;
+    margin: -6px 0 0 -9px;
+    background-repeat: no-repeat;
+}
+.warp-2-2{
+    position: absolute;
+    width: 497px;
+    height: 230px;
+ background: url(../img/Enter4.png) no-repeat;
+    box-sizing: border-box;
+    bottom: -144px;
+    left: -116px;
+    padding-top: 55px;
+    padding-left: 180px  
+}
+.warp-2-2-left{
+    position: absolute;
+    width: 103px;
+    height: 103px;
+    left: 36px;
+    top: 13px;
+    background-repeat: no-repeat;
+}
+.warp-2-2-left>img{
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+    text-indent: -999999px;
+    border: 0;
+    position: relative;
+    top: 0px;
+}
+.warp-2-2-right{
+    background-repeat: no-repeat;
+    position: absolute;
+    display: flex;
+    width: 310px;
+    justify-content: space-between;
+    top: 0;
+}
+.warp-2-2-right-one{
+    width: 177px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    background-repeat: no-repeat;
+}
+.warp-2-2-right-one-top{
+    background: url(../img/Enter2.png);
+    background-position: -2034px -757px;
+    display: block;
+    width: 177px;
+    height: 53px;
+    margin: 0 0 10px;
+    background-repeat: no-repeat;
+}
+.warp-2-2-right-one-bottom{
+    background: url(../img/Enter2.png);
+    background-position: -1589px -998px;
+    display: block;
+    width: 177px;
+    height: 53px;
+    margin: 0 0 10px;
+    background-repeat: no-repeat;
+}
+.warp-2-2-right-two{
+    background: url(../img/Enter2.png);
+    background-position: -1619px -757px;
+    display: block;
+    margin-left: 14px;
+    width: 113px;
+    height: 58px;
+    padding: 55px 0 0;
+    background-repeat: no-repeat;
+}
+.p1{
+    text-align: center;
+    color: #606060;
+    font-size: 0;
+}
+.p2{
+    text-align: center;
+    color: #606060;
+    font-size: 0;
+}
+.warp-2-3{
+    height: 717px;
+background: url(../img/Enter6.png);
+    left: 0;
+    bottom: -300px;
+    z-index: 20;
+    position: absolute;
+    width: 100%;
+    pointer-events: none;
+}
+.warp-2-3-one{
+    background: url(../img/Enter2.png);
+    background-position: -908px -1415px;
+    width: 1080px;
+    height: 81px;
+    bottom: 285px;
+    left: 50%;
+    margin: 0 0 0 -540px;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+.warp-3{
+    width: 1920px;
+    position: relative;
+    left: 50%;
+    margin: 0 0 0 -960px;
+    height: 1244px;
+}
+.warp-3-one{
+    background: url(../img/Enter7.jpg);
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+.yezi{
+background: url(../img/Enter2.png);
+background-position: -2166px -570px;
+}
+.yezi{
+    position: absolute;
+    left: 250px;
+    bottom: 90%;
+    width: 30px;
+    height: 19px;
+    opacity: 0;
+    background-repeat: no-repeat;
+}
+.yezi1{
+    animation:yezi1 12s infinite linear;
+}
+.yezi2{
+    animation: yezi2 12s 1s infinite linear;
+}
+.yezi3{
+    animation: yezi3 13s 1s infinite linear;
+}
+.yezi4{
+    animation: yezi4 12s 3s infinite linear;
+}
+.yezi5{
+    animation: yezi5 12s infinite linear;
+}
+.yezi6{
+    animation: yezi6 10s infinite linear;
+}
+@-webkit-keyframes yezi1{80%{opacity:1}100%{opacity:0;left:50%;bottom:150px}}@-moz-keyframes yezi1{80%{opacity:1}100%{opacity:0;left:50%;bottom:150px}}@-ms-keyframes yezi1{80%{opacity:1}100%{opacity:0;left:50%;bottom:150px}}@-o-keyframes yezi1{80%{opacity:1}100%{opacity:0;left:50%;bottom:150px}}@keyframes yezi1{80%{opacity:1}100%{opacity:0;left:50%;bottom:150px}}.part-2 .yezi2{-webkit-transform:scale(0.8) rotate(90deg);-moz-transform:scale(0.8) rotate(90deg);-ms-transform:scale(0.8) rotate(90deg);-o-transform:scale(0.8) rotate(90deg);transform:scale(0.8) rotate(90deg);-moz-animation:yezi2 12s 1s infinite linear;-webkit-animation:yezi2 12s 1s infinite linear;-o-animation:yezi2 12s 1s infinite linear;-ms-animation:yezi2 12s 1s infinite linear;animation:yezi2 12s 1s infinite linear}@-webkit-keyframes yezi2{0%{opacity:1}100%{opacity:0;left:80%;bottom:200px}}@-moz-keyframes yezi2{0%{opacity:1}100%{opacity:0;left:80%;bottom:200px}}@-ms-keyframes yezi2{0%{opacity:1}100%{opacity:0;left:80%;bottom:200px}}@-o-keyframes yezi2{0%{opacity:1}100%{opacity:0;left:80%;bottom:200px}}@keyframes yezi2{0%{opacity:1}100%{opacity:0;left:80%;bottom:200px}}.part-2 .yezi3{-webkit-transform:scale(0.7) rotate(-15deg);-moz-transform:scale(0.7) rotate(-15deg);-ms-transform:scale(0.7) rotate(-15deg);-o-transform:scale(0.7) rotate(-15deg);transform:scale(0.7) rotate(-15deg);-moz-animation:yezi3 13s 1s infinite linear;-webkit-animation:yezi3 13s 1s infinite linear;-o-animation:yezi3 13s 1s infinite linear;-ms-animation:yezi3 13s 1s infinite linear;animation:yezi3 13s 1s infinite linear}@-webkit-keyframes yezi3{50%{opacity:1}100%{opacity:0;left:65%;bottom:80px}}@-moz-keyframes yezi3{50%{opacity:1}100%{opacity:0;left:65%;bottom:80px}}@-ms-keyframes yezi3{50%{opacity:1}100%{opacity:0;left:65%;bottom:80px}}@-o-keyframes yezi3{50%{opacity:1}100%{opacity:0;left:65%;bottom:80px}}@keyframes yezi3{50%{opacity:1}100%{opacity:0;left:65%;bottom:80px}}.part-2 .yezi4{-webkit-transform:scale(0.8) rotate(15deg);-moz-transform:scale(0.8) rotate(15deg);-ms-transform:scale(0.8) rotate(15deg);-o-transform:scale(0.8) rotate(15deg);transform:scale(0.8) rotate(15deg);-moz-animation:yezi4 12s 3s infinite linear;-webkit-animation:yezi4 12s 3s infinite linear;-o-animation:yezi4 12s 3s infinite linear;-ms-animation:yezi4 12s 3s infinite linear;animation:yezi4 12s 3s infinite linear}@-webkit-keyframes yezi4{50%{opacity:1}100%{opacity:0;left:80%;bottom:250px}}@-moz-keyframes yezi4{50%{opacity:1}100%{opacity:0;left:80%;bottom:250px}}@-ms-keyframes yezi4{50%{opacity:1}100%{opacity:0;left:80%;bottom:250px}}@-o-keyframes yezi4{50%{opacity:1}100%{opacity:0;left:80%;bottom:250px}}@keyframes yezi4{50%{opacity:1}100%{opacity:0;left:80%;bottom:250px}}.part-2 .yezi5{-webkit-transform:scale(0.8) rotate(45deg);-moz-transform:scale(0.8) rotate(45deg);-ms-transform:scale(0.8) rotate(45deg);-o-transform:scale(0.8) rotate(45deg);transform:scale(0.8) rotate(45deg);-moz-animation:yezi5 12s infinite linear;-webkit-animation:yezi5 12s infinite linear;-o-animation:yezi5 12s infinite linear;-ms-animation:yezi5 12s infinite linear;animation:yezi5 12s infinite linear}@-webkit-keyframes yezi5{0%{opacity:1;left:50%;bottom:700px}50%{opacity:1}100%{opacity:0;left:80%;bottom:220px}}@-moz-keyframes yezi5{0%{opacity:1;left:50%;bottom:700px}50%{opacity:1}100%{opacity:0;left:80%;bottom:220px}}@-ms-keyframes yezi5{0%{opacity:1;left:50%;bottom:700px}50%{opacity:1}100%{opacity:0;left:80%;bottom:220px}}@-o-keyframes yezi5{0%{opacity:1;left:50%;bottom:700px}50%{opacity:1}100%{opacity:0;left:80%;bottom:220px}}@keyframes yezi5{0%{opacity:1;left:50%;bottom:700px}50%{opacity:1}100%{opacity:0;left:80%;bottom:220px}}.part-2 .yezi6{-moz-animation:yezi6 10s infinite linear;-webkit-animation:yezi6 10s infinite linear;-o-animation:yezi6 10s infinite linear;-ms-animation:yezi6 10s infinite linear;animation:yezi6 10s infinite linear}@-webkit-keyframes yezi6{0%{opacity:1;left:50%;bottom:700px}50%{opacity:1}100%{opacity:0;left:100%;bottom:200px}}@-moz-keyframes yezi6{0%{opacity:1;left:50%;bottom:700px}50%{opacity:1}100%{opacity:0;left:100%;bottom:200px}}@-ms-keyframes yezi6{0%{opacity:1;left:50%;bottom:700px}50%{opacity:1}100%{opacity:0;left:100%;bottom:200px}}@-o-keyframes yezi6{0%{opacity:1;left:50%;bottom:700px}50%{opacity:1}100%{opacity:0;left:100%;bottom:200px}}@keyframes yezi6{0%{opacity:1;left:50%;bottom:700px}50%{opacity:1}100%{opacity:0;left:100%;bottom:200px}}
+.warp-3-two{
+    background: url(../img/Enter2.png);
+    background-position: -934px 0px;
+    width: 526px;
+    height: 586px;
+    top: 48px;
+    left: 0;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+.warp-3-four{
+    background: url(../img/Enter8.png);
+    width: 1637px;
+    height: 1205px;
+    top: -200px;
+    left: 0;
+    z-index: 10;
+    position: absolute;
+}
+.warp-3-four-one{
+    background: url(../img/role.png);
+    width: 633px;
+    height: 831px;
+    left: -83px;
+    top: 333px;
+    position: absolute;
+    /* animation: role2Ani steps(10,end) 1.1s infinite; */
+}
+.warp-3-four-two{
+    position: absolute;
+    top: 475px;
+    left: 552px;
+}
+.warp-3-four-two>div{
+    background: url(../img/Enter2.png);
+    background-position: -1792px -440px;
+    width: 173px;
+    height: 317px;
+    position: absolute;
+    background-repeat: no-repeat;
+    list-style: none;
+}
+.li1{
+    top: 51px;
+    left: -8px;
+}
+.li2{
+    top: 91px;
+    left: 179px;
+}
+.li3{
+    top: 48px;
+    left: 327px;
+}
+.li4{
+    top: 33px;
+    left: 481px;
+}
+.li5{
+    top: 81px;
+    left: 645px;
+}
+.li6{
+    top: 461px;
+    left: 167px;
+}
+.li7{
+    top: 409px;
+    left: 331px;
+}
+.li8{
+    top: 384px;
+    left: 484px;
+}
+.li9{
+    top: 465px;
+    left: 637px;
+}
+.li10{
+    top: 429px;
+    left: 816px;
+}
+.cn{
+    width: 100%;
+    height: 26px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+}
+.n>img{
+    width: 56px;
+    height: 56px;
+    top: 71px;
+    left: 58px;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+.cn1{
+    width: 91px;
+    position: absolute;
+    left: 42px;
+    top: 159px;
+    font-size: 14px;
+    color: #425d5d;
+    text-align: center;
+}
+.warp-3-four-two>div:hover{
+    background: url(../img/Enter2.png);
+    background-position: -1619px -440px;
+}
+.warp-3-there{
+    background: url(../img/Enter19.png);
+    width: 1545px;
+    height: 723px;
+    top: 75px;
+    right: 0;
+    position: absolute;
+}
+.warp-3-five{
+    background: url(../img/Enter20.png) ;
+    width: 596px;
+    height: 518px;
+    top: 650px;
+    left: 0;
+    z-index: 15;
+    position: absolute;
+}
+.warp-3-six{
+    background:url(../img/Enter21.png);
+    left: 0;
+    bottom: -650px;
+    z-index: 3;
+    height: 1082px;
+    position: absolute;
+    width: 100%;
+}
+.warp-4{
+    height: 951px;
+    width: 1920px;
+    position: relative;
+    left: 50%;
+    margin: 0 0 0 -960px;
+}
+.warp-4-one{
+    background: url(../img/Enter22.jpg);
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+.warp-4-two{
+    background: url(../img/Enter2.png);
+    background-position: -908px -1334px;
+    width: 1080px;
+    height: 81px;
+    top: 96px;
+    left: 50%;
+    margin: 0 0 0 -540px;
+    z-index: 5;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+.warp-4-there{
+    background: url(../img/Enter2.png);
+    background-position: 0px -626px;
+    width: 708px;
+    height: 545px;
+    top: 440px;
+    left: 0;
+    z-index: 7;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+.warp-4-four{
+    background: url(../img/Enter2.png);
+    background-position: -1460px 0px;
+    width: 767px;
+    height: 440px;
+    top: 557px;
+    right: 0;
+    z-index: 7;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+.warp-4-five{
+    width: 1540px;
+    height: 838px;
+    left: 50%;
+    top: 30px;
+    margin: 0 0 0 -620px;
+    width: 1540px;
+    height: 838px;
+    left: 50%;
+    top: 30px;
+    margin: 0 0 0 -620px;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 1000;
+}
+.warp-4-five-one{
+    background: url(../img/Enter23.png);
+    position: relative;
+    width: 1540px;
+    height: 838px;
+    margin-left: -170px;
+    margin-top: -140px;
+    padding: 204px 279px 222px 301px;
+    box-sizing: border-box;
+    transform: translate(0,200px);
+}
+.warp-4-five-one-one{
+    background: url(../img/Enter24.png);
+    width: 894px;
+    height: 88px;
+    position: absolute;
+    pointer-events: none;
+    bottom: 120px;
+    left: 370px;
+}
+.warp-4-five-one-two{
+    background: url(../img/Enter34.png);
+    width: 42px;
+    height: 440px;
+    position: absolute;
+    top: 190px;
+    left: 1277px;
+}
+.bn{
+    background: url(../img/Enter2.png);
+    background-position: -2166px -532px;
+    width: 38px;
+    height: 38px;
+    margin: 10px auto;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.bn:hover{
+    background: url(../img/Enter2.png);
+    background-position: -2166px -494px;
+    width: 38px;
+    height: 38px;
+    margin: 10px auto;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.Warp-4-five-one-four{
+    width: 960px;
+    height: 412px;
+    background-color: #fff;
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+}
+.Warp-4-five-one-five{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+.vn{
+    width: 960px;
+    width: 960px;
+    transform: translate3d(0px, 0px, 0px);
+    transition-duration: 0ms;
+    font-size: 0;
+    position: relative;
+}
+
+.vn>img{
+    height: 100%;
+    vertical-align: middle;
+    font-size: 0;
+}
+.bn1{
+    background-position: -2166px -494px;
+}
+.bn2{
+    display: none;
+}
+.bn3{
+    display: block;
+}
+.warp-4-six{
+    background: url(../img/Entering5.png);
+    height: 1082px;
+    left: 0;
+    bottom: -650px;
+    z-index: 3;
+    position: absolute;
+    width: 100%;
+}
+.futrue{
+    width: 1920px;
+    height: 610px;
+    position: relative;
+    /* left: 50%;
+    margin: 0 0 0 -960px; */
+    top: 30px;
+}
+.funtrue-one{
+    background: url(../img/liu1.jpg);
+    width: 1439px;
+    height: 571px;
+ position: absolute;
+    bottom: 0;
+    left: 60px;
+    z-index: 100;
+}
+.funtrue-two{
+    background: url(../img/index_z_88adb1a.png);
+    background-position: -908px -1989px;
+    width: 1636px;
+    height: 307px;
+    left: 62px;
+    top: 10px;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 200;
+}
+.funtrue-there{
+    background: url(../img/index_z_88adb1a.png);
+    background-position: 0px -1422px;
+    width: 495px;
+    height: 567px;
+    right: 160px;
+    bottom: 0;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 100;
+}
+.funtrue-four{
+    width: 1062px;
+    height: 327px;
+    top: 183px;
+    left: 217px;
+position: absolute;
+background-repeat: no-repeat;
+z-index: 110;
+}
+.funtrue-four-one{
+    background: url(../img/index_z_88adb1a.png);
+    background-position: 0px -2620px;
+    width: 1062px;
+    height: 163px;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+.funtrue-four-one-two,
+.funtrue-four-one-there,
+.funtrue-four-one-one{
+    width: 142px;
+    height: 210px;
+    float: left;
+    margin: 12px 0 0 124px;
+    position: relative;
+    background-repeat: no-repeat;
+
+}
+.funtrue-four-one-two>img,
+.funtrue-four-one-there>img,
+.funtrue-four-one-one>img{
+    display: block;
+    width: 113px;
+    margin: 0 auto;
+}
+.funtrue-four-one-two>p,
+.funtrue-four-one-there>p,
+.funtrue-four-one-one>p{
+    margin: 40px 0 0;
+    font-size: 14px;
+    color: #252525;
+    text-align: center;
+}
+.funtrue-four-one-two>p>a,
+.funtrue-four-one-there>p>a,
+.funtrue-four-one-one>p>a,
+.funtrue-four-one-four>p>a
+{
+    color: #1d746d;
+    text-align: center;
+}
+.funtrue-four-one-four{
+    width: 142px;
+    height: 210px;
+    float: left;
+    margin: 12px 0 0 124px;
+    position: relative;
+    padding: 113px 0 0;
+    margin: 12px 0 0 105px;
+    font-size: 14px;
+}
+.funtrue-four-two{
+    position: relative;
+    top:216px
+}
+.funtrue-four-two-one{
+    position: relative;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+.funtrue-four-two-one-top{
+    display: inline-block;
+    vertical-align: middle;
+    height: 48px;
+    min-width: 300px;
+    float: left;
+}
+.funtrue-four-two-one-bottm{
+float: right;
+    vertical-align: top;
+    position: relative;
+    z-index: 1;
+}
+.funtrue-four-two-one-bottm>i{
+    color: #749d8c;
+}
+.funtrue-four-two-one-bottm>i>a{
+    background-color: #610000;
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 3px;
+    top: 21px;
+}
+
+
+.funtrue-four-two-two{
+    color: #749d8c;
+    position: absolute;
+    top: 59px;
+}
+.gudin1{
+    background: url(../img/pop_z_76599b4.png);
+    background-position: -831px -628px;
+    width: 159px;
+    height: 430px;
+    position: fixed;
+    top: 50%;
+    left: 10px;
+    margin: -215px 0 0 0;
+    z-index: 50;
+    display: none;
+}
+.gudin1>p{
+    font-size: 14px;
+    color: #606060;
+    text-align: center;
+}
+.gudin1-there{
+    width: 115px;
+    height: 115px;
+    margin: 5px 0 0 25px;
+}
+.gudin1-there>img{
+    display: block;
+    width: 100%;
+}
+.gudin12{
+    margin: 12px 0 0 18px;
+}
+.gudin1-one>a:nth-child(1){
+background: url(../img/pop_z_76599b4.png);
+background-position: -960px -1058px;
+width: 131px;
+    height: 43px;
+    margin: 20px 0 0;
+    background-repeat: no-repeat;
+    display: block;
+}
+.gudin1-one>a:nth-child(2){
+    background: url(../img/pop_z_76599b4.png);
+    background-position: -1223px -1058px;
+    width: 132px;
+    height: 39px;
+    margin: 10px 0 0;
+    background-repeat: no-repeat;
+    display: block;
+}
+.gudin1-two{
+    background: url(../img/pop_z_76599b4.png);
+    background-position: -831px -1058px;
+    width: 129px;
+    height: 51px;
+    margin: 15px 0 0;
+    padding: 75px 0 0;
+    background-repeat: no-repeat;
+}
+.gudin1-two>p:nth-child(1){
+    text-align: center;
+    color: #606060;
+    font-size: 16px;
+    font-weight: 700;
+}
+.gudin1-two>p:nth-child(2){
+    text-align: center;
+    color: #606060;
+    font-size: 12px;
+}
+.gudin2{
+    background: url(../img/Enter2.png);
+    background-position: -1589px -870px;
+    content: "";
+    width: 123px;
+    height: 116px;
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    margin: -110.5px 0 0 0;
+    padding: 12px 0 0 40px;
+    display: none;
+    z-index: 50000;
+}
+.gudin22{
+    background: url(../img/index_z_88adb1a.png);
+    background-position: -3075px -523px;
+content: "";
+width: 100px;
+height: 27px;
+margin: 0 0 13px;
+padding: 0 0 0 35px;
+line-height: 27px;
+color: #273a40;
+font-size: 15px;
+cursor: pointer;
+background-repeat: no-repeat;
+z-index: 10000000000000000;
+}
+.dn{
+    background: url(../img/index_z_88adb1a.png);
+    background-position: -3210px -523px;
+}

@@ -195,9 +195,9 @@ let LOL = document.querySelectorAll(".gudin22")
 for (var i = 0; i < LOL.length; i++) {
     LOL[i].onclick = function () {
         for (var u = 0; u < LOL.length; u++) {
-            LOL[u].classList.remove("cn")
+            LOL[u].classList.remove("dn")
         }
-        this.classList.add("cn")
+        this.classList.add("dn")
     }
     LOL[0].onclick = function () {
         $('html,body').animate({
@@ -230,19 +230,19 @@ for (var i = 0; i < LOL.length; i++) {
             v
         )
         if (v >= 0) {
-            $('.gudin2>.gudin22').eq(0).addClass('cn').siblings().removeClass('cn');
+            $('.gudin2>.gudin22').eq(0).addClass('dn').siblings().removeClass('cn');
         }
         if (v >= 1300) {
-            $('.gudin2>.gudin22').eq(1).addClass('cn').siblings().removeClass('cn');
+            $('.gudin2>.gudin22').eq(1).addClass('dn').siblings().removeClass('cn');
         }
         if (v >= 2700) {
-            $('.gudin2>.gudin22').eq(2).addClass('cn').siblings().removeClass('cn');
+            $('.gudin2>.gudin22').eq(2).addClass('dn').siblings().removeClass('cn');
         }
         if (v >= 4300) {
-            $('.gudin2>.gudin22').eq(3).addClass('cn').siblings().removeClass('cn');
+            $('.gudin2>.gudin22').eq(3).addClass('dn').siblings().removeClass('cn');
         }
         if (v >= 5500) {
-            $('.gudin2>.gudin22').eq(4).addClass('cn').siblings().removeClass('cn');
+            $('.gudin2>.gudin22').eq(4).addClass('dn').siblings().removeClass('cn');
         }
     })
     // $('.gudin22').click(function () {
